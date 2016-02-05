@@ -1,0 +1,6 @@
+# OS Specific
+.DS_Store
+.Trash
+
+node_modules/
+scss/lib/
