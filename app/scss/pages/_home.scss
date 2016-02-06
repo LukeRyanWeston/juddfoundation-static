@@ -1,0 +1,6 @@
+
+.home {
+	@include background-image(url("images/homepage-image.jpg"));
+  	background-size: cover;
+  	min-height: 800px;
+}

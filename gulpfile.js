@@ -27,20 +27,20 @@ function customPlumber(errTitle) {
 
 // Gulp Sass Task 
 gulp.task('sass', function() {
-    gulp.src('scss/{,*/}*.{scss,sass}')
+    gulp.src('app/scss/{,*/}*.{scss,sass}')
     .pipe(sourcemaps.init())
     //.pipe(sourcemaps.write())
     .pipe(customPlumber('Error Running Sass'))
     .pipe(sass())
-    .pipe(gulp.dest('/'))
+    .pipe(gulp.dest('app'))
     .pipe(browserSync.reload({
         stream: true
     }));
 })
 
 gulp.task('watch', ['sass', 'autoprefixer'], function () {
-    gulp.watch('scss/{,*/}*.{scss,sass}', ['sass']);
-    gulp.watch(['templates/{,*/}*.{nunjucks,macros}', 'pages/{,*/}*.{nunjucks,macros}' ], ['nunjucks']);
+    gulp.watch('app/scss/{,*/}*.{scss,sass}', ['sass']);
+    gulp.watch(['app/templates/{,*/}*.{nunjucks,macros}', 'app/pages/{,*/}*.{nunjucks,macros}' ], ['nunjucks']);
 });
 
 
@@ -56,19 +56,19 @@ gulp.task('express', function() {
 
 gulp.task('nunjucks', function() {
   // nunjucks stuff here
-  nunjucksRender.nunjucks.configure(['templates/']);
+  nunjucksRender.nunjucks.configure(['app/templates/']);
   // Gets .html and .nunjucks files in pages
-  return gulp.src('pages/**/*.+(html|nunjucks)')
+  return gulp.src('app/pages/**/*.+(html|nunjucks)')
   // Renders template with nunjucks
   .pipe(nunjucksRender())
   // output files in app folder
-  .pipe(gulp.dest('/'))
+  .pipe(gulp.dest('app'))
 });
 
 gulp.task('browserSync', function() {
     browserSync({
         server: {
-            baseDir: '/'
+            baseDir: 'app'
         },
     })
 });
