@@ -1,0 +1,16 @@
+<!-- index.nunjucks -->
+{% extends "layout.nunjucks" %}
+
+{% block content %} 
+
+	{% include "partials/header.nunjucks" %}
+
+	{% include "partials/top-nav.nunjucks" %}
+
+	{% include "partials/hero.nunjucks" %}
+
+	{% include "partials/judd.nunjucks" %}
+
+	{% include "partials/footer.nunjucks" %}
+
+{% endblock %}

@@ -1,0 +1,10 @@
+
+.top-nav {
+	@include container;
+	margin-bottom: 1em;
+}
+
+.top-nav li {
+	display: inline-block;
+	margin-right: 1.5em;
+}

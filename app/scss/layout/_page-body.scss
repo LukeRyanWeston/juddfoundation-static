@@ -1,0 +1,28 @@
+
+article {
+	@include container;
+}
+
+article p {
+	font-size: .8em;
+}
+
+.page-col-1 {
+	@include span(1 of 4);
+}
+
+.page-col-2 {
+	@include span(1 of 4);
+}
+
+.page-col-3 {
+	@include span(1 of 4);
+}
+
+.page-col-4 {
+	@include span(1 of 4 last);
+}
+
+.grid {
+	margin-bottom: 2em;
+}

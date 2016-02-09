@@ -28,6 +28,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 # Base styles
 --------------------------------------------------------------*/
 @import "base/variables";
+@import "base/sitewide";
 @import "base/typography";
 @import "components/buttons";
 @import "components/forms";
@@ -45,10 +46,13 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 # Layout styles
 --------------------------------------------------------------*/
 @import "layout/grid-settings";
-
+@import "layout/header";
+@import "layout/footer";
+@import "components/navigation";
+@import "layout/page-body";
 
 /*--------------------------------------------------------------
-# Page specifis styles
+# Page specific styles
 --------------------------------------------------------------*/
 @import "pages/home";
 

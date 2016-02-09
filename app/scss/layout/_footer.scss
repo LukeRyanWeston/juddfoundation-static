@@ -1,0 +1,29 @@
+footer {
+	background-color: $black;
+	color: $white;
+	padding-top: 1.25em;
+	padding-bottom: 1.22em;
+}
+
+footer a {
+	color: $white;
+}
+
+.footer-container {
+	@include container;
+}
+
+.footer-left {
+	@include span(2 of 4);
+}
+
+.footer-right {
+	@include span(2 of 4 last);
+}
+
+.footer-nav li {
+	display: inline-block;
+	list-style: none;
+	margin-right: 15px;
+	font-size: .8em;
+}

@@ -1,0 +1,10 @@
+
+<nav class="top-nav">
+	<ul>
+		<li><a href="">Biography</a></li>
+		<li><a href="">Art</a></li>
+		<li><a href="">Furniture</a></li>
+		<li><a href="">Writing</a></li>
+		<li><a href="">Design & Architecture</a></li>
+	</ul>
+</nav>

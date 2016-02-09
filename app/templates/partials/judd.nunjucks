@@ -1,0 +1,66 @@
+
+<article>
+
+<h1>Works</h1>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	
+</article>
+
+<article>
+	<section class="page-col-1 grid">
+		<img src="images/art-tn.jpg" alt="" class="img-responsive">
+	</section>
+
+	<section class="page-col-2 grid">
+		<h2>Art</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+		<p><a href="">Read More</a></p>
+	</section>
+
+	<section class="page-col-3 grid">
+		<img src="images/design-architecture-tn.jpg" alt="" class="img-responsive">
+	</section>
+
+	<section class="page-col-4 grid">
+		<h2>Design & Architecture</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+		<p><a href="">Read More</a></p>
+	</section>
+
+	<section class="page-col-1 grid">
+		<img src="images/art-tn.jpg" alt="" class="img-responsive">
+	</section>
+
+	<section class="page-col-2 grid">
+		<h2>Writing</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+		<p><a href="">Read More</a></p>
+	</section>
+
+	<section class="page-col-3 grid">
+		<img src="images/design-architecture-tn.jpg" alt="" class="img-responsive">
+	</section>
+
+	<section class="page-col-4 grid">
+		<h2>Biography</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+		<p><a href="">Read More</a></p>
+	</section>
+
+	<section class="page-col-1 grid">
+		<img src="images/furniture-tn.jpg" alt="" class="img-responsive">
+	</section>
+
+	<section class="page-col-2 grid">
+		<h2>Furniture</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+		<p><a href="">Read More</a></p>
+	</section>
+
+</article>

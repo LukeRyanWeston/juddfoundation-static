@@ -380,6 +380,9 @@ th {
 /*--------------------------------------------------------------
 # Base styles
 --------------------------------------------------------------*/
+.gold {
+  color: #ecb731; }
+
 body {
   color: #333;
   font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
@@ -665,8 +668,195 @@ div#multiColumn {
 /*--------------------------------------------------------------
 # Layout styles
 --------------------------------------------------------------*/
+header h1 {
+  font-size: 1.5em; }
+
+.header-container {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1.5em;
+  padding-bottom: .25em; }
+  .header-container:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  head {
+    display: block;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 999;
+    color: #333;
+    background: rgba(255, 255, 255, 0.25); }
+  head:before {
+    content: "|||";
+    display: block;
+    padding: 5px 10px;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: bold; }
+  head:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: red; }
+  head:hover ~ .header-container,
+  head:hover ~ body .header-container {
+    position: relative; }
+    head:hover ~ .header-container:before,
+    head:hover ~ body .header-container:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      content: " ";
+      z-index: 998;
+      background-image: -webkit-linear-gradient( left , rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 90.90909%, transparent 90.90909%);
+      background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 90.90909%, transparent 90.90909%);
+      background-size: 25.5814%;
+      background-origin: content-box;
+      background-clip: content-box;
+      background-position: left top; }
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding-top: 1.25em;
+  padding-bottom: 1.22em; }
+
+footer a {
+  color: #fff; }
+
+.footer-container {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto; }
+  .footer-container:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  head:hover ~ .footer-container,
+  head:hover ~ body .footer-container {
+    position: relative; }
+    head:hover ~ .footer-container:before,
+    head:hover ~ body .footer-container:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      content: " ";
+      z-index: 998;
+      background-image: -webkit-linear-gradient( left , rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 90.90909%, transparent 90.90909%);
+      background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 90.90909%, transparent 90.90909%);
+      background-size: 25.5814%;
+      background-origin: content-box;
+      background-clip: content-box;
+      background-position: left top; }
+
+.footer-left {
+  width: 48.83721%;
+  float: left;
+  margin-right: 2.32558%; }
+
+.footer-right {
+  width: 48.83721%;
+  float: right;
+  margin-right: 0; }
+
+.footer-nav li {
+  display: inline-block;
+  list-style: none;
+  margin-right: 15px;
+  font-size: .8em; }
+
+.top-nav {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em; }
+  .top-nav:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  head:hover ~ .top-nav,
+  head:hover ~ body .top-nav {
+    position: relative; }
+    head:hover ~ .top-nav:before,
+    head:hover ~ body .top-nav:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      content: " ";
+      z-index: 998;
+      background-image: -webkit-linear-gradient( left , rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 90.90909%, transparent 90.90909%);
+      background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 90.90909%, transparent 90.90909%);
+      background-size: 25.5814%;
+      background-origin: content-box;
+      background-clip: content-box;
+      background-position: left top; }
+
+.top-nav li {
+  display: inline-block;
+  margin-right: 1.5em; }
+
+article {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto; }
+  article:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  head:hover ~ article,
+  head:hover ~ body article {
+    position: relative; }
+    head:hover ~ article:before,
+    head:hover ~ body article:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      content: " ";
+      z-index: 998;
+      background-image: -webkit-linear-gradient( left , rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 90.90909%, transparent 90.90909%);
+      background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 90.90909%, transparent 90.90909%);
+      background-size: 25.5814%;
+      background-origin: content-box;
+      background-clip: content-box;
+      background-position: left top; }
+
+article p {
+  font-size: .8em; }
+
+.page-col-1 {
+  width: 23.25581%;
+  float: left;
+  margin-right: 2.32558%; }
+
+.page-col-2 {
+  width: 23.25581%;
+  float: left;
+  margin-right: 2.32558%; }
+
+.page-col-3 {
+  width: 23.25581%;
+  float: left;
+  margin-right: 2.32558%; }
+
+.page-col-4 {
+  width: 23.25581%;
+  float: right;
+  margin-right: 0; }
+
+.grid {
+  margin-bottom: 2em; }
+
 /*--------------------------------------------------------------
-# Page specifis styles
+# Page specific styles
 --------------------------------------------------------------*/
 .home {
   background-image: url("images/homepage-image.jpg");
